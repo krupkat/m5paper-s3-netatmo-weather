@@ -1,0 +1,10 @@
+BasedOnStyle: Google
+
+SortIncludes: CaseInsensitive
+IncludeCategories:
+  - Regex:           '<(Arduino|M5|Netatmo|WiFi|HTTP|Preferences|boost|WString).*>'
+    Priority:        2
+  - Regex:           '<[[:alnum:]._]+>'
+    Priority:        1
+  - Regex:           '.*'
+    Priority:        3

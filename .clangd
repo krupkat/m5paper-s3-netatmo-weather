@@ -1,0 +1,26 @@
+CompileFlags:
+  Add:
+    [
+      -nostdinc,
+      -D__XTENSA__,
+      -I/home/tom/.platformio/packages/toolchain-xtensa-esp32s3/xtensa-esp32s3-elf/include,
+      -I/home/tom/.platformio/packages/toolchain-xtensa-esp32s3/xtensa-esp32s3-elf/include/c++/8.4.0,
+      -I/home/tom/.platformio/packages/toolchain-xtensa-esp32s3/xtensa-esp32s3-elf/include/c++/8.4.0/xtensa-esp32s3-elf,
+      -I/home/tom/.platformio/packages/toolchain-xtensa-esp32s3/xtensa-esp32s3-elf/sys-include,
+      -I/home/tom/.platformio/packages/toolchain-xtensa-esp32s3/lib/gcc/xtensa-esp32s3-elf/8.4.0/include,
+      -I/home/tom/.platformio/packages/toolchain-xtensa-esp32s3/lib/gcc/xtensa-esp32s3-elf/8.4.0/include-fixed,
+      -I/home/tom/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src,
+      -I/home/tom/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src,
+      -I/home/tom/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src,
+      -I/home/tom/.platformio/packages/framework-arduinoespressif32/libraries/Preferences/src
+    ]
+  Remove:
+    [-fno-tree-switch-conversion, -fstrict-volatile-bitfields, -mlongcalls]
+
+Diagnostics:
+  Suppress:
+    [
+      pp_including_mainfile_in_preamble,
+      redefinition_different_typedef,
+      static_assert_requirement_failed,
+    ]

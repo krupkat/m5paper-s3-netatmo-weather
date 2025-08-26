@@ -1,0 +1,7 @@
+.pio
+.cache
+.direnv
+.vscode
+.envrc
+compile_commands.json
+src/private_config.hpp
